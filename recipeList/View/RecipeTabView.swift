@@ -10,7 +10,8 @@ import SwiftUI
 struct RecipeTabView: View {
     var body: some View {
         TabView{
-            Text("Featured view").tabItem {
+            RecipeFeaturedView()
+                .tabItem {
                 VStack{
                     Image(systemName: "star.fill")
                     Text("Featured")
@@ -23,7 +24,7 @@ struct RecipeTabView: View {
                     
                 }
             }
-        }
+        }.environmentObject(RecipeModel()) //this recipemodel data can be accessed ,when a child is connected to parent
     }
 }
 

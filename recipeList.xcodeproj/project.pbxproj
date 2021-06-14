@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD3CE1FD2677317900FD2AC7 /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3CE1FC2677317900FD2AC7 /* RecipeFeaturedView.swift */; };
 		AD4072EC266954F20032176D /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4072EB266954F20032176D /* RecipeTabView.swift */; };
 		ADD44496266609D9003710C9 /* recipeListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD44495266609D9003710C9 /* recipeListApp.swift */; };
 		ADD44498266609D9003710C9 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD44497266609D9003710C9 /* RecipeListView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD3CE1FC2677317900FD2AC7 /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
 		AD4072EB266954F20032176D /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 		ADD44492266609D9003710C9 /* recipeList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipeList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD44495266609D9003710C9 /* recipeListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeListApp.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				AD4072EB266954F20032176D /* RecipeTabView.swift */,
+				AD3CE1FC2677317900FD2AC7 /* RecipeFeaturedView.swift */,
 				ADD44497266609D9003710C9 /* RecipeListView.swift */,
 				ADD444B12667C7A7003710C9 /* RecipeDetailView.swift */,
 			);
@@ -203,6 +206,7 @@
 				ADD44498266609D9003710C9 /* RecipeListView.swift in Sources */,
 				ADD44496266609D9003710C9 /* recipeListApp.swift in Sources */,
 				ADD444B02667A80D003710C9 /* DataService.swift in Sources */,
+				AD3CE1FD2677317900FD2AC7 /* RecipeFeaturedView.swift in Sources */,
 				AD4072EC266954F20032176D /* RecipeTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
