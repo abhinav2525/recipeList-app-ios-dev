@@ -15,17 +15,22 @@ struct RecipeDetailView: View {
         ScrollView {
             VStack (alignment: .leading){
                 // MARK: Recipe Image
-                
                 Image(recipe.image)
                     .resizable()
                     .scaledToFill()
                 
-                // MARK: picker
+                // MARK:Recipe title
+                Text(recipe.name)
+                    .bold()
+                    .font(.largeTitle)
+                    .padding(.top, 10.0)
+                    .padding(.leading)
+                
+                // MARK: servings size picker
                 VStack(alignment: .leading){
                     Text("select your serving size:")
                     
-                
-                   Picker("", selection: $selectedServingSize) {
+                Picker("", selection: $selectedServingSize) {
                         
                         Text("2").tag(2)
                         Text("4").tag(4)
@@ -35,10 +40,7 @@ struct RecipeDetailView: View {
                    }.pickerStyle(SegmentedPickerStyle())
                    .frame(width:160)
                 }
-                .padding(.horizontal)
-                
-                
-               
+                .padding([.top, .leading, .trailing])
                 
                 // MARK: Ingredients
                VStack(alignment: .leading){
@@ -49,8 +51,7 @@ struct RecipeDetailView: View {
                     ForEach (recipe.ingredients){ item in
                         Text("-" + RecipeModel.getPortion(ingredient: item, recipeServings: recipe.servings, targetServings: selectedServingSize) + " " + item.name.lowercased())
                             
-                        
-                    }
+                        }
 
                 }
                 .padding(.horizontal)
@@ -70,10 +71,9 @@ struct RecipeDetailView: View {
                     }
                     
                 }
+                .padding()
                 
             }
-            
-            
             
         }
         .navigationBarTitle(recipe.name)
@@ -87,11 +87,5 @@ struct RecipeDetailView_Previews: PreviewProvider {
         // create a dummy recipe and pass it into the detail view somthat we can see a preview
         let model = RecipeModel()
         RecipeDetailView(recipe: model.recipes[0])
-        
-        
-        
-        //RecipeDetailView()
-     
-      
-    }
+        }
 }
